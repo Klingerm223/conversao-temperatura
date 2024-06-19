@@ -39,8 +39,8 @@ jobs:
             files: ./src/Dockerfile
             push: true
             tags:
-              klingermarinho223/aula-docker2:v1
-              klingermarinho223/aula-docker2:lstest
+              klingermarinho223/aula-docker2:${{github.run_number}}
+              klingermarinho223/aula-docker2:latest
               
               
               
