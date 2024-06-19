@@ -9,10 +9,10 @@ jobs:
   my_job:
     name: deploy to staging
     runs-on: ubuntu-22.04
-  
-name: Setup_Node
-  uses:actions/setup-node@v4
-  with:node-version:'20.x'
+    steps:
+      - uses:
+          actions/setup-node@v4
+          with:node-version:'20.x'
 
 
    
