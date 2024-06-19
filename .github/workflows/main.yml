@@ -24,11 +24,19 @@ jobs:
       - name : TEste
         run : mocha src/test/convert.js
 
+
+      - name: Docker Login
+        uses: docker/login-action@v3.2.0
+        with:
+          username: klingermarinho223
+          password: Kd792198@@
+          
+
       - name: Build and push Docker images
         uses: docker/build-push-action@v6.0.1
         with:
             context: ./src
-            files: ./src/dockerfile
+            files: ./src/Dockerfile
             push: true
             tags:
               klingermarinho223/aula-docker2:v1
