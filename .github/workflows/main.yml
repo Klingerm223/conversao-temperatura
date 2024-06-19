@@ -38,7 +38,7 @@ jobs:
             context: ./src
             files: ./src/Dockerfile
             push: true
-            tags:
+            tags: |
               klingermarinho223/conversao-temperatura:${{github.run_number}}
               klingermarinho223/conversao-temperatura:latest
               
